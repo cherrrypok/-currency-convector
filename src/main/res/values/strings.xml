@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Конвертер Валют</string>
+    <string name="RUB">Russian Ruble (RUB)</string>
+    <string name="USD">United States Dollar (USD)</string>
+    <string name="GBP">Great Britain Pound (GBP)</string>
+    <string name="EUR">Euro (EUR)</string>
+    <string name="UAH">Ukraine Hryvnia (UAH)</string>
+    <string name="JPY">Japanese Yen (JPY)</string>
+</resources>

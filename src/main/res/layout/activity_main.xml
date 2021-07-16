@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="115dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="55dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount_input">
+
+        <Button
+            android:id="@+id/RUB_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RUB" />
+
+        <Button
+            android:id="@+id/USD_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="USD" />
+
+        <Button
+            android:id="@+id/GBP_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GBP" />
+
+        <Button
+            android:id="@+id/EUR_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EUR" />
+
+        <Button
+            android:id="@+id/UAH_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UAH" />
+
+        <Button
+            android:id="@+id/JPY_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JPY" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="115dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount_input">
+
+        <Button
+            android:id="@+id/RUB_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RUB" />
+
+        <Button
+            android:id="@+id/USD_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="USD" />
+
+        <Button
+            android:id="@+id/GBP_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GBP" />
+
+        <Button
+            android:id="@+id/EUR_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EUR" />
+
+        <Button
+            android:id="@+id/UAH_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UAH" />
+
+        <Button
+            android:id="@+id/JPY_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JPY" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/amount_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="100"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tw_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:text="Валюта ввода"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tw_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:text="Валюта Вывода"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currency_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="currency input"
+        app:layout_constraintEnd_toEndOf="@+id/amount_input"
+        app:layout_constraintStart_toStartOf="@+id/amount_input"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currency_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="476dp"
+        android:text="currency output"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/amount_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="508dp"
+        android:text="1.435"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/currency_output"
+        app:layout_constraintStart_toStartOf="@+id/currency_output"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
